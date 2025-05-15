@@ -1,0 +1,121 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+   background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+}
+.container {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    background-color: white;
+    border: 5px solid none;
+    overflow: hidden;
+}
+header {
+    padding: 35px 35px;
+    background-color: rgb(206, 62, 206);
+    
+   
+}
+header h1 {
+    color: #ededed;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+header h1 i {
+    color: #d9e7ff;
+    transition: transform 0.3s ease;
+}
+header h1 i:hover {
+  transform: rotate(15deg) scale(1.2);
+  font-size: 35px;
+}
+
+input[type="text"] {
+    flex: 1;
+   padding: 10px 10px;
+   border: none;
+   outline: none;
+   font-size: 15px;
+   border-radius: 10px;
+}
+.input-section {
+  display: flex;
+  gap: 10px;
+}
+.input-section input:hover {
+    transition: 0.5s;
+box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.input-section button {
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(105, 5, 159);
+    color:whitesmoke;
+    cursor: pointer;
+}
+.input-section button:hover {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    transition: ease 0.8s;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(116, 115, 115, 0.15) 0px -36px 30px 0px inset, rgba(78, 77, 77, 0.1) 0px -79px 40px 0px inset, rgba(85, 84, 84, 0.06) 0px 2px 1px, rgba(72, 72, 72, 0.09) 0px 4px 2px, rgba(94, 94, 94, 0.09) 0px 8px 4px, rgba(100, 99, 99, 0.09) 0px 16px 8px, rgba(106, 105, 105, 0.09) 0px 32px 16px;
+}
+.todos-container {
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-content {
+ display: flex;
+ align-items: center;
+ gap: 15px
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+.todo-actions button {
+    background: none;
+    margin: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.todo-actions .pen {
+    color: rgb(94, 94, 241);
+}
+.todo-actions .pen:hover {
+    font-size: 25px;
+    transition: ease 0.5s;
+}
+.todo-actions .remove {
+    color: rgb(244, 60, 60);
+}
+.todo-actions .remove:hover {
+    font-size: 25px;
+    transition: ease 0.5s;
+}
+.todo-content span {
+    font-size: 20px;
+}
+.todo-content p{
+    opacity: 50%;
+}
